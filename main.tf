@@ -4,23 +4,14 @@ provider "google" {
   region  = "us-central1"  
   zone        = "us-central1-b"
 }
-resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network2"
+resource "google_compute_network" "vpc_networke" {
+  name                    = "vpc-networke"
   auto_create_subnetworks = true
   mtu                     = 1460
 }
-resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network3"
+resource "google_compute_network" "vpc_networks" {
+  name                    = "vpc-networks"
   auto_create_subnetworks = true
   mtu                     = 1460
 }
-resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network5"
-  auto_create_subnetworks = true
-  mtu                     = 1460
-}
-resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network6"
-  auto_create_subnetworks = true
-  mtu                     = 1460
-}
+
