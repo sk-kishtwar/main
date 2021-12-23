@@ -8,5 +8,7 @@ resource "google_compute_network" "vpc_networke" {
   auto_create_subnetworks = true
   mtu                     = 1460
 }
-
+resource "google_storage_bucket" "gcs_bucket" {
+  name = "test-bucket-random-001123"
+}
 
