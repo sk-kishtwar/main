@@ -22,10 +22,7 @@ jobs:
       run: terraform init
       env:
          GOOGLE_CREDENTIALS : ${{ secrets.GOOGLE_CREDENTIALS}}
-    - name: Terraform Plan
-      run: terraform plan
-      env:
-         GOOGLE_CREDENTIALS : ${{ secrets.GOOGLE_CREDENTIALS}}
+    
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
       env:
