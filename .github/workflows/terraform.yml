@@ -25,5 +25,4 @@ jobs:
     - name: Terraform Destroy
       run: terraform destroy
       env:
-         GOOGLE_CREDENTIALS : ${{ secrets.GOOGLE_CREDENTIALS}}
-    
+         GOOGLE_CREDENTIALS : ${{ secrets.GOOGLE_CREDENTIALS}} 
