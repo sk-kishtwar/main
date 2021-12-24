@@ -4,7 +4,7 @@ provider "google" {
   zone        = "us-central1-b"
 }
 resource "google_compute_network" "vpc_networke" {
-  name                    = "vpc-networke"
+  name                    = "vpc-networke2"
   auto_create_subnetworks = true
   mtu                     = 1460
 }
